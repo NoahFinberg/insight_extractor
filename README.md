@@ -29,10 +29,10 @@ Even though our company didn't survive we hope that our work can be of use to so
 
 
 
-### Training Data ###
+### Training Data and Model Background ###
 
-
-
+-training data used
+-cnn model used
 
 ### Acknowledgements ###
 
