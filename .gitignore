@@ -67,14 +67,7 @@ target/
 
 
 ### Large Files ###
-data/
-models/
-packages/insight_extractor/build/lib/insight_extractor/models/model-1.h5 
-packages/insight_extractor/build/lib/insight_extractor/models/model-combined-1.h5
-packages/insight_extractor/dist/insight_extractor-0.1.0-py3-none-any.whl
-packages/insight_extractor/dist/insight_extractor-0.1.0.tar.gz
-packages/insight_extractor/insight_extractor/data/glove.6B.300d.txt
-
-glove.6B.300d.txt
+# data/
+# models/
 
 .DS_Store
