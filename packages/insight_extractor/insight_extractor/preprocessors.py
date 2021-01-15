@@ -12,7 +12,9 @@ from sklearn.model_selection import train_test_split
 import json
 from keras_preprocessing.text import tokenizer_from_json
 
-from config import MAX_SEQ_LENGTH, TOKENIZER_PATH
+
+### CONFIG ###
+MAX_SEQ_LENGTH    = 500
 
 def clean_doc(doc):
     """

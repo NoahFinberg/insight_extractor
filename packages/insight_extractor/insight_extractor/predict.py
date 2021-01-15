@@ -1,7 +1,3 @@
-from config import MAX_SEQ_LENGTH, MAX_NUM_WORDS, MODEL_PATH
-from preprocessors import clean_docs, tokenize
-from get_input_data import load_data
-
 import tensorflow as tf
 
 def load_model(file):

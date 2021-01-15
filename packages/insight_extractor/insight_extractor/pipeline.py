@@ -1,22 +1,29 @@
-import config
-import preprocessors
-import get_input_data
-import predict
+from pkg_resources import resource_filename
+
+from insight_extractor.preprocessors import clean_docs, tokenize
+from insight_extractor.predict import load_model, predict
+
+
+### CONFIG ###
+MAX_SEQ_LENGTH    = 500
+MAX_NUM_WORDS     = 15000
+
+
+# get current working directory
+MODEL_PATH = resource_filename(__name__, "models/model-combined-1.h5")
+TOKENIZER_PATH = resource_filename(__name__, "models/combined-tokenizer.json")
 
 ###################################
 ### Insight Prediction Pipeline ###
 ###################################
 
+# takes a list of sentences and returns insight predictions.
+def extract_insights(sentences):
+    ### PREPROCESS ##
+    cleaned_docs = clean_docs(sentences) # clean docs
+    tokenized_docs = tokenize(cleaned_docs, TOKENIZER_PATH) # tokenize docs 
 
-### LOAD ###
-docs = get_input_data.load_data(config.INPUT_DATA_PATH)
-print(docs)
-
-### PREPROCESS ##
-cleaned_docs = preprocessors.clean_docs(docs) # clean docs
-tokenized_docs = preprocessors.tokenize(cleaned_docs, config.TOKENIZER_PATH) # tokenize docs 
-
-## PREDICT ##
-model = predict.load_model(config.MODEL_PATH) # load model
-predictions = predict.predict(tokenized_docs, model) # make predictions [prob_no_insight, prob_yes_insight]
-print(predictions)
+    ## PREDICT ##
+    model = load_model(MODEL_PATH) # load model
+    predictions = predict(tokenized_docs, model) # make predictions [prob_no_insight, prob_yes_insight]
+    return predictions
