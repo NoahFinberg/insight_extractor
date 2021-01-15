@@ -57,7 +57,7 @@ Over time, we plan to update this package to better reflect the robustness of th
 ## Acknowledgements
 This insight extraction model benefitted from the hard work of many of our team members at Considdr. In particular, hand labeling thousands and thousands of sentences and cross-validating those labels across members of our team was an especially grueling effort. Thank you to Hailey Wahl, Kevin Lane, Derek Yau, and Eddie Korando for all your help here.
 
-We also heavily utilized the following resources in build our CNN model.
+We also heavily utilized the following resources in building our CNN model.
 
 - The fantastic paper by Yoon Kim ["Convolutional Neural Networks for Sentence Classification"](https://arxiv.org/abs/1408.5882)
 - The TF 1 implementation of Dr. Kim's work by [Denny Britz](http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/)
