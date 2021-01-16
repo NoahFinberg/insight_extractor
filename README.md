@@ -1,5 +1,5 @@
 # insight_extractor
-The Insight Extractor was the ML model that [Considdr](https://medium.com/considdr-history) used to idenitfy abstractive sentences in full text documents on the web. Considdr closed in the summer of 2020 and now we're making our model freely available to all. We'd love to hear the interesting ways people apply this model. All we ask is that you cite this repo.
+The Insight Extractor was the ML model that [Considdr](https://medium.com/considdr-history) used to idenitfy abstractive sentences in full text documents on the web. Considdr closed in the summer of 2020 and now we're making our model freely available to all. We'd love to hear the interesting ways people apply this model. Feel free to use or adapt our work for both commercial and non-commercial applications -- all we ask is that you cite and link back to this repo.
 
 Abstractive sentences are of particular value when it comes to understanding the key insights in adjacent documents. For more on this summarization approach see ["Summarization by Adjacent Document."](https://medium.com/considdr-history)
 
@@ -57,7 +57,7 @@ Over time, we plan to update this package to better reflect the robustness of th
 ## Acknowledgements
 This insight extraction model benefitted from the hard work of many of our team members at Considdr. In particular, hand labeling thousands and thousands of sentences and cross-validating those labels across members of our team was an especially grueling effort. Thank you to Hailey Wahl, Kevin Lane, Derek Yau, and Eddie Korando for all your help here.
 
-We also heavily utilized the following resources in build our CNN model.
+We also heavily utilized the following resources in building our CNN model.
 
 - The fantastic paper by Yoon Kim ["Convolutional Neural Networks for Sentence Classification"](https://arxiv.org/abs/1408.5882)
 - The TF 1 implementation of Dr. Kim's work by [Denny Britz](http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/)
