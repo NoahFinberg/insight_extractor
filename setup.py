@@ -43,7 +43,7 @@ except FileNotFoundError:
 ROOT_DIR = Path(__file__).resolve().parent
 PACKAGE_DIR = NAME
 about = {}
-with open(PACKAGE_DIR / 'VERSION') as f:
+with open('VERSION') as f:
     _version = f.read().strip()
     about['__version__'] = _version
 
