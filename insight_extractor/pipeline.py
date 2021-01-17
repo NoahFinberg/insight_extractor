@@ -1,8 +1,8 @@
 
 from pkg_resources import resource_filename
 
-from insight_extractor.preprocessors import clean_docs, tokenize
-from insight_extractor.predict import load_model, predict
+from .preprocessors import clean_docs, tokenize
+from .predict import load_model, predict
 
 
 ### CONFIG ###
