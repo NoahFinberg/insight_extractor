@@ -28,7 +28,7 @@ Install
 Using insight_extractor
 -----------------------
 
-v0.1.0 of insight_extractor exposes one primary function --\ ``extract_insights`` -- which takes a list of candidate insight sentences and returns  a list of prediction scores ``[prob(not an insight), prob(yes an insight)]``.`
+v0.1.0 of insight_extractor exposes one primary function --\ ``extract_insights`` -- which takes a list of candidate insight sentences and returns  a list of prediction scores signifying the probability that our model thinks a given sentence is an insight.
 
 **Input:**
 
@@ -60,9 +60,7 @@ v0.1.0 of insight_extractor exposes one primary function --\ ``extract_insights`
 
 .. code-block::
 
-   array([[0.28326818, 0.7167318 ],
-      [0.3710433 , 0.6289567 ],
-      [0.9886193 , 0.01138071]], dtype=float32)
+   [0.7167318, 0.6289567, 0.01138071]
 
 
 **Notes on Interpretation**
