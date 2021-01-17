@@ -1,4 +1,4 @@
-insight_extractor
+Insight Extractor
 =================
 
 
@@ -63,8 +63,9 @@ v0.1.0 of insight_extractor exposes one primary function --\ ``extract_insights`
       [0.9886193 , 0.01138071]], dtype=float32)
 
 
-  **Notes on Interpretation**
-  Of the three sample input sentences, we would define the first two as an "insight", but not the last sentence. As you can see our model predicts that the first and second sample sentences are insights with a probability of ~72% and ~63% respectively. 
+**Notes on Interpretation**
+
+Of the three sample input sentences, we would define the first two as an "insight", but not the last sentence. As you can see our model predicts that the first and second sample sentences are insights with a probability of ~72% and ~63% respectively. 
 
 Generally most sentences in a given article are not insight sentences. However, some sentences are more "abstractive" than others. In practice, we found that most sentences predicted with >10% probability of being an insight often have at least some abstractive value. You may want to fiddle with the threshold given your use-case and tolerance for False Positives. 
 
