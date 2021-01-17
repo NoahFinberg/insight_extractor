@@ -9,9 +9,8 @@ Tests for insight_extractor
 import os
 import shutil
 import unittest
-import numpy as np
 import pandas as pd
-from pipeline import extract_insights
+from insight_extractor.pipeline import extract_insights
 from . import capture
 
 
@@ -28,9 +27,9 @@ class TestInsightExtractor(unittest.TestCase):
         pass
 
     def test_insight_extractor(self):
-        predictions = extract_insights(self.sentences)
-        ref = np.array([[0.2832682 , 0.7167318 ], [0.3710433 , 0.6289567 ], [0.9886193 , 0.01138071]])
-        self.assertTrue(np.allclose(predictions, ref))
+        probs_insight = extract_insights(self.sentences)
+        ref = [0.7167318, 0.6289567, 0.01138071]
+        self.assertTrue(probs_insight, ref)
 
 if __name__ == '__main__':
     unittest.main()

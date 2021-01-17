@@ -1,8 +1,8 @@
 
 from pkg_resources import resource_filename
 
-from preprocessors import clean_docs, tokenize
-from predict import load_model, predict
+from insight_extractor.preprocessors import clean_docs, tokenize
+from insight_extractor.predict import load_model, predict
 
 
 ### CONFIG ###
@@ -27,4 +27,7 @@ def extract_insights(sentences):
     ## PREDICT ##
     model = load_model(MODEL_PATH) # load model
     predictions = predict(tokenized_docs, model) # make predictions [prob_no_insight, prob_yes_insight]
-    return predictions
+
+    # return prob of insight
+    probs_insight = [p[1] for p in predictions]
+    return probs_insight
