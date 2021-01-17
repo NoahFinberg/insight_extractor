@@ -10,7 +10,7 @@ import os
 import shutil
 import unittest
 import pandas as pd
-from pipeline import extract_insights
+from insight_extractor.pipeline import extract_insights
 from . import capture
 
 
@@ -29,9 +29,7 @@ class TestCensusLn(unittest.TestCase):
 
     def test_insight_extractor(self):
         predictions = extract_insights(sentences)
-        self.assertTrue(all(predictions, array([[0.28326818, 0.7167318 ],
-   [0.3710433 , 0.6289567 ],
-   [0.9886193 , 0.01138071]], dtype=float32)))
+        self.assertTrue(all(predictions == [0.28326818, 0.3710433, 0.9886193]))
 
 if __name__ == '__main__':
     unittest.main()
