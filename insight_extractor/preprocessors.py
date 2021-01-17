@@ -4,7 +4,7 @@ import numpy as np
 import os
 import re
 import string
-from nltk.corpus import stopwords
+import nltk
 nltk.download('stopwords')
 
 import tensorflow as tf
