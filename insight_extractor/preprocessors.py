@@ -5,6 +5,7 @@ import os
 import re
 import string
 from nltk.corpus import stopwords
+nltk.download('stopwords')
 
 import tensorflow as tf
 from sklearn.model_selection import train_test_split
