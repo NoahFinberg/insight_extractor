@@ -4,8 +4,7 @@ import numpy as np
 import os
 import re
 import string
-import nltk
-nltk.download('stopwords')
+from nltk.corpus import stopwords
 
 import tensorflow as tf
 from sklearn.model_selection import train_test_split
