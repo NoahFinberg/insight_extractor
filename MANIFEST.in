@@ -6,11 +6,9 @@ include *.h5
 
 recursive-include ./insight_extractor/*
 
-include insight_extractor/data/input.txt
-include insight_extractor/models/*.h5
-include insight_extractor/models/*.json
-include insight_extractor/VERSION
-
+include ./models/*.h5
+include ./models/*.json
+include ./VERSION
 include ./requirements.txt
 exclude *.log
 
