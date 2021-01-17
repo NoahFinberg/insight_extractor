@@ -17,7 +17,7 @@ Install
    pip install insight_extractor
 
 
-  **Notes:** 
+**Notes:** 
 
 
 * We use Tensorflow 2.X and recommend using Python 3.6 or higher.
