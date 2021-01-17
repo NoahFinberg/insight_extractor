@@ -4,6 +4,8 @@ Insight Extractor
 
 .. image:: https://pepy.tech/badge/insight-extractor
     :target: https://pepy.tech/project/insight-extractor
+.. image:: https://travis-ci.com/NoahFinberg/insight_extractor.svg?branch=main
+    :target: https://travis-ci.com/NoahFinberg/insight_extractor
 
 The Insight Extractor was the ML model that `Considdr <https://medium.com/considdr-history>`_ used to idenitfy abstractive sentences in full text documents on the web. Considdr closed in the summer of 2020 and now we're making our model freely available to all. We'd love to hear the interesting ways people apply this model. All we ask is that you cite this repo.
 
