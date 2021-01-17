@@ -22,7 +22,6 @@ idna==2.10
 imagesize==1.2.0
 importlib-metadata==3.4.0
 iniconfig==1.1.1
--e git+git@github.com:NoahFinberg/insight_extractor.git@74e9b9e0b4f4a9b5aca4b809c7ea3c62e2036557#egg=insight_extractor
 Jinja2==2.11.2
 joblib==1.0.0
 Keras-Preprocessing==1.1.2
