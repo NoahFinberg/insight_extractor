@@ -11,7 +11,7 @@ import shutil
 import unittest
 import numpy as np
 import pandas as pd
-from insight_extractor.pipeline import extract_insights
+from pipeline import extract_insights
 from . import capture
 
 
