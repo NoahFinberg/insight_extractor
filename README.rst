@@ -88,7 +88,7 @@ This insight extraction model benefitted from the hard work of many of our team 
 
 A special thank you to Gaurav Sood who encouraged us to share our model with the broader community and who helped walk us through best practices for packaging ML models.
 
-We also heavily utilized the following resources in build our CNN model.
+We also heavily utilized the following resources in building our CNN model.
 
 
 * The fantastic paper by Yoon Kim `"Convolutional Neural Networks for Sentence Classification" <https://arxiv.org/abs/1408.5882>`_
