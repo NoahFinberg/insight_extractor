@@ -28,7 +28,7 @@ Install
 Using insight_extractor
 -----------------------
 
-v0.1.0 of insight_extractor exposes one primary function --\ ``extract_insights`` -- which takes a list of candidate insight sentences and returns  a list of prediction scores signifying the probability that our model thinks a given sentence is an insight.
+v0.1.1 of insight_extractor exposes one primary function --\ ``extract_insights`` -- which takes a list of candidate insight sentences and returns  a list of prediction scores signifying the probability that our model thinks a given sentence is an insight.
 
 **Input:**
 
@@ -72,7 +72,7 @@ Generally most sentences in a given article are not insight sentences. However, 
 Notes
 -----
 
-v0.1.0 is really the bare minimum functionality of the Considdr insight model. 
+v0.1.X is really the bare minimum functionality of the Considdr insight model. 
 
 
 #. In the actual production implementation we took as inputs entire articles (html pages) and returned insight sentences from that article.
@@ -85,6 +85,8 @@ Acknowledgements
 ----------------
 
 This insight extraction model benefitted from the hard work of many of our team members at Considdr. In particular, hand labeling thousands and thousands of sentences and cross-validating those labels across members of our team was an especially grueling effort. Thank you to Hailey Wahl, Kevin Lane, Derek Yau, and Eddie Korando for all your help here.
+
+A special thank you to Gaurav Sood who encouraged us to share our model with the broader community and who helped walk us through best practices for packaging ML models.
 
 We also heavily utilized the following resources in build our CNN model.
 
