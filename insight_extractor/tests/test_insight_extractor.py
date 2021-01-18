@@ -10,6 +10,7 @@ import os
 import shutil
 import unittest
 import pandas as pd
+import numpy as np
 from insight_extractor.pipeline import extract_insights
 from . import capture
 
@@ -29,7 +30,7 @@ class TestInsightExtractor(unittest.TestCase):
     def test_insight_extractor(self):
         probs_insight = extract_insights(self.sentences)
         ref = [0.7167318, 0.6289567, 0.01138071]
-        self.assertTrue(probs_insight, ref)
+        self.assertTrue(np.allclose(probs_insight, ref))
 
 if __name__ == '__main__':
     unittest.main()
